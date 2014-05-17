@@ -1,0 +1,126 @@
+{ "results": [
+	{
+        "createdAt": "2014-05-15T16:05:17.376Z",
+        "details": "Newest Oculus Rifts - Delivery in July",
+        "objectId": "RP0JPJJcWo",
+        "prize": "Beats and Oculus Rifts",
+        "title": "Grand Prize - Software",
+        "updatedAt": "2014-05-15T18:25:14.420Z"
+    },
+	{
+        "createdAt": "2014-05-15T16:18:33.189Z",
+        "details": "Type of 3D Printer",
+        "objectId": "4qMb1YUMsv",
+        "prize": "3D Printer and Beats Headphones",
+        "title": "Grand Prize- Hardware",
+        "updatedAt": "2014-05-15T16:20:35.069Z"
+    },
+	{
+        "company": "Lob",
+        "createdAt": "2014-05-15T17:00:41.343Z",
+        "details": "Lob Credit as well",
+        "objectId": "gbXgWIefwa",
+        "prize": "Dinner with Founders",
+        "title": "Lob Prize",
+        "updatedAt": "2014-05-15T18:21:15.846Z"
+    },
+	{
+        "company": "Dwolla",
+        "createdAt": "2014-05-15T17:05:49.275Z",
+        "details": "Best Use of Dwolla",
+        "objectId": "8cSrRd5kpM",
+        "prize": "Pi's",
+        "title": "Dwolla Prize",
+        "updatedAt": "2014-05-15T18:21:09.885Z"
+    },
+	{
+        "company": "FB",
+        "createdAt": "2014-05-15T17:37:35.834Z",
+        "details": "Using FB Developer Tools",
+        "objectId": "4bPPmZae0j",
+        "prize": "Facebook Swag",
+        "title": "Facebook Prize",
+        "updatedAt": "2014-05-15T18:20:58.134Z"
+    },
+	{
+        "company": "AFA",
+        "createdAt": "2014-05-15T17:40:59.216Z",
+        "details": "Best Educational App",
+        "objectId": "RulyOeVKY6",
+        "prize": "$1000 and AFA interview",
+        "title": "Apps for Aptitude Prize",
+        "updatedAt": "2014-05-15T18:20:38.334Z"
+    },
+	{
+        "company": "Mashape",
+        "createdAt": "2014-05-15T17:40:12.325Z",
+        "details": "Best Use of Mashape",
+        "objectId": "QK05yYIz5l",
+        "prize": "$300",
+        "title": "Mashape Prize",
+        "updatedAt": "2014-05-15T18:20:41.925Z"
+    },
+	{
+        "company": "Survey Monkey",
+        "createdAt": "2014-05-15T17:39:56.741Z",
+        "details": "Best Use of Survey Monkey",
+        "objectId": "iakwPcHoEd",
+        "prize": "Pro Accounts",
+        "title": "SurveyMonkey Prize",
+        "updatedAt": "2014-05-15T18:20:47.931Z"
+    },
+	{
+        "company": "Intel",
+        "createdAt": "2014-05-15T17:39:04.901Z",
+        "details": "Best Use of Intel XDK",
+        "objectId": "JGmUvOJjfo",
+        "prize": "Tablets",
+        "title": "Intel Prize",
+        "updatedAt": "2014-05-15T18:20:50.940Z"
+    },
+	{
+        "company": "Wolfram Alpha",
+        "createdAt": "2014-05-15T17:38:19.789Z",
+        "details": "Best Use of Wolfram Alpha",
+        "objectId": "EpKR015b2X",
+        "prize": "Swag and Pro Accounts",
+        "title": "Wolfram Alpha Prize",
+        "updatedAt": "2014-05-15T18:20:55.735Z"
+    },
+	{
+        "company": "UserApp",
+        "createdAt": "2014-05-15T17:36:54.210Z",
+        "details": "Best use of UserApp",
+        "objectId": "SADo5JNyyA",
+        "prize": " Rasperry Pi's",
+        "title": "UserApp Prize",
+        "updatedAt": "2014-05-15T18:21:01.419Z"
+    },
+	{
+        "company": "Nvidia",
+        "createdAt": "2014-05-15T17:23:53.291Z",
+        "details": "For Best Mentor",
+        "objectId": "SFUjCVkSuS",
+        "prize": "Nvidia Shield",
+        "title": "Best Mentor Prize",
+        "updatedAt": "2014-05-15T18:21:05.044Z"
+    },
+	{
+        "company": "CodeUp",
+        "createdAt": "2014-05-15T17:04:59.534Z",
+        "details": "For Best New Female Coder",
+        "objectId": "Mw4RVvMs5t",
+        "prize": "$7500 Scholarship",
+        "title": "CodeUp Prize",
+        "updatedAt": "2014-05-15T18:21:13.713Z"
+    },
+	{
+        "company": "Microsoft",
+        "createdAt": "2014-05-15T16:27:22.482Z",
+        "details": "Newest edition with Kinect",
+        "objectId": "ap6br4HtLs",
+        "prize": "Xbox Ones",
+        "title": "Microsoft Prize",
+        "updatedAt": "2014-05-15T18:21:20.284Z"
+    }
+] }
