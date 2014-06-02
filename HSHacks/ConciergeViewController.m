@@ -127,7 +127,6 @@
         self.objectsPerPage = 150;
         self.sections = [NSMutableDictionary dictionary];
         self.sectionToCompanyMap = [NSMutableDictionary dictionary];
-
     }
     return self;
 }

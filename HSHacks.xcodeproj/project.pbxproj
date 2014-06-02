@@ -111,7 +111,6 @@
 /* Begin PBXFileReference section */
 		0759E22818B2198A00E67B23 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		0759E34418B393F500E67B23 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
-		6C151EC418B954A700115516 /* Icon-120@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-120@2x.png"; path = "HSHacks/Images.xcassets/AppIcon.appiconset/Icon-120@2x.png"; sourceTree = "<group>"; };
 		6C151EC518B9550200115516 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
 		6C151EC618B9555F00115516 /* hshacks80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hshacks80.png; sourceTree = "<group>"; };
 		6C151EC718B955A500115516 /* hshacks58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hshacks58.png; sourceTree = "<group>"; };
@@ -446,7 +445,6 @@
 				6C151EC718B955A500115516 /* hshacks58.png */,
 				6C151EC618B9555F00115516 /* hshacks80.png */,
 				6C151EC518B9550200115516 /* Icon-76@2x.png */,
-				6C151EC418B954A700115516 /* Icon-120@2x.png */,
 				E770466618891A7700BE6FC4 /* HSHacks */,
 				E770468818891A7700BE6FC4 /* HSHacksTests */,
 				E770465F18891A7700BE6FC4 /* Frameworks */,
@@ -832,7 +830,7 @@
 		E770469318891A7700BE6FC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -853,7 +851,7 @@
 		E770469418891A7700BE6FC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

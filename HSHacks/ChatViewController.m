@@ -13,7 +13,7 @@
 #import "SDWebImage/UIImageView+WebCache.h"
 #import "SVProgressHUD/SVProgressHUD.h"
 //Firebase chat server
-#define kFirechatNS @"https://hshacks.firebaseio.com/"
+#define kFirechatNS @"https://sohackschat.firebaseio.com/"
 
 @interface ChatViewController ()
 
@@ -65,8 +65,6 @@
     
     userData.userName = [defaults objectForKey:@"name"];
     userData.userPhoto = [defaults objectForKey:@"photo"];
-
-   
     
     self.name = userData.userName;
     self.photoURL = userData.userPhoto;

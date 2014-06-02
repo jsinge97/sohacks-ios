@@ -30,7 +30,7 @@
 {
     [super viewDidLoad];
     self.tableView.separatorInset = UIEdgeInsetsZero;
-        self.tableView.userInteractionEnabled = YES;
+    self.tableView.userInteractionEnabled = YES;
     self.tableView.bounces = YES;
     
 }
@@ -81,7 +81,6 @@
         query.cachePolicy = kPFCachePolicyCacheThenNetwork;
     }
    
-    
     // Order by Day
     [query orderByAscending:@"time"];
     

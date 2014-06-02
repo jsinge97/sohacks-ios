@@ -103,8 +103,6 @@
     
     [query orderByDescending:@"createdAt"];
     
-   
-    
     return query;
 }
 

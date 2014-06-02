@@ -13,8 +13,6 @@
 
 @interface LoginViewController ()
 
-
-
 @end
 
 @implementation LoginViewController
@@ -54,7 +52,6 @@
     CGRect tbuttonF;
     CGRect fButtonF;
     CGRect gButtonF;
-    
     
     CGSize screenSize = [[UIScreen mainScreen] bounds].size;
     
@@ -216,8 +213,6 @@
             
     }
      ];
-    
-  
    
 }
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8YX-ce-x5E">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Updates Nav View Controller - Updates-->
@@ -1210,7 +1210,7 @@
         <image name="btnCamera.png" width="77" height="77"/>
         <image name="calendar.png" width="30" height="30"/>
         <image name="chat.png" width="30" height="30"/>
-        <image name="clock.gif" width="200" height="200"/>
+        <image name="clock.gif" width="128" height="128"/>
         <image name="facebook.png" width="32" height="32"/>
         <image name="hshacksLOGO.png" width="1000" height="1000"/>
         <image name="logout.png" width="32" height="32"/>

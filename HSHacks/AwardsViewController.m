@@ -133,7 +133,6 @@
     UILabel *companyLabel = (UILabel*) [cell viewWithTag:13];
     companyLabel.text = [object objectForKey:@"company"];
     
-    
     return cell;
 }
 
