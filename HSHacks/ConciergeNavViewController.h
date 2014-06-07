@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Firebase/Firebase.h>
 
-@interface ConciergeNavViewController : UIViewController
-
+@interface ConciergeNavViewController : UIViewController <UIActionSheetDelegate>
+@property (nonatomic, strong) Firebase* firebase;
+@property (nonatomic, strong) NSArray *foodArray;
 - (IBAction)shareTwitter:(id)sender;
 - (IBAction)shareFacebook:(id)sender;
 

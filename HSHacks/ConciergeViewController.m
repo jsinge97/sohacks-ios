@@ -227,8 +227,6 @@
     [label setFont:[UIFont systemFontOfSize:14]];
     [label setTextColor:[UIColor colorWithRed:123/255.0 green:123/255.0 blue:127/255.0 alpha:1.0]];
     NSString *company = [[self companyForSection:section] uppercaseString];
-
-
     
     [label setText:company];
     [view addSubview:label];
@@ -260,14 +258,12 @@
         MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
         mc.mailComposeDelegate = self;
         [mc setSubject:emailTitle];
-        [mc setSubject:@"HSHacks Help"];
+        [mc setSubject:@"SoHacks Help"];
         [mc setMessageBody:messageBody isHTML:NO];
         [mc setToRecipients:sendArray];
         
         // Present mail view controller on screen
         [self presentViewController:mc animated:YES completion:NULL];
-
-    
     }
     
     if([[selectedObject objectForKey:@"contactType"]isEqualToString: @"twitter"]){
@@ -312,7 +308,6 @@
     }
     
     // Configure the cell
-
     //If no skills, then move name downto center of cell
     
     if([[object objectForKey:@"skills"]isEqualToString:@""]){
@@ -325,8 +320,9 @@
         UILabel *nameLabel = (UILabel*) [cell viewWithTag:100];
         nameLabel.text = [object objectForKey:@"name"];
     }
-        UILabel *skillsLabel = (UILabel*) [cell viewWithTag:101];
-        skillsLabel.text = [object objectForKey:@"skills"];
+    
+    UILabel *skillsLabel = (UILabel*) [cell viewWithTag:101];
+    skillsLabel.text = [object objectForKey:@"skills"];
     
     //Set the photo
     if([[object objectForKey:@"contactType"]isEqualToString: @"email"]){
@@ -343,7 +339,11 @@
         UIImageView *comImage = (UIImageView*) [cell viewWithTag:102];
          comImage.image = [UIImage imageNamed:@"phone.png"];
     }
-
+    
+    if([[object objectForKey:@"contactType"]isEqualToString: @"multi"]){
+        UIImageView *comImage = (UIImageView*) [cell viewWithTag:102];
+        comImage.image = [UIImage imageNamed:@"phone.png"];
+    }
     
     
     return cell;

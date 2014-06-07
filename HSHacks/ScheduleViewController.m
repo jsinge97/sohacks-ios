@@ -32,7 +32,6 @@
     self.tableView.separatorInset = UIEdgeInsetsZero;
     self.tableView.userInteractionEnabled = YES;
     self.tableView.bounces = YES;
-    
 }
 - (void)viewWillAppear:(BOOL)animated
 {

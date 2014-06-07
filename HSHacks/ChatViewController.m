@@ -40,51 +40,48 @@
     
     NSString *connected = [NSString stringWithContentsOfURL:[NSURL URLWithString:@"https://twitter.com/getibox"] encoding:NSUTF8StringEncoding error:nil];
     if (connected != NULL) {
-    
-          [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
-     self.chatTextField.userInteractionEnabled = NO;
- 
-    
-    chatTableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
-    
-    //Remove separator
-    self.chatTableView.separatorColor = [UIColor clearColor];
-    
-    self.chatTextField.enablesReturnKeyAutomatically = YES;
-    
-    UserData *userData = [UserData sharedManager];
-
-    // Initialize array that will store chat messages.
-    self.chat = [[NSMutableArray alloc] init];
-    
-    // Initialize the root of our Firebase namespace.
-    self.firebase = [[Firebase alloc] initWithUrl:kFirechatNS];
-
-    //Store name and photoURL in UserDefaults
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    
-    userData.userName = [defaults objectForKey:@"name"];
-    userData.userPhoto = [defaults objectForKey:@"photo"];
-    
-    self.name = userData.userName;
-    self.photoURL = userData.userPhoto;
-    
-      
-    [self.firebase observeEventType:FEventTypeChildAdded withBlock:^(FDataSnapshot *snapshot) {
-        // Add the chat message to the array.
-        [self.chat addObject:snapshot.value];
-        // Reload the table view so the new message will show up.
-         [SVProgressHUD dismiss];
-        dispatch_async(dispatch_get_main_queue(), ^{
-    
-        [self.chatTableView reloadData];
-           
-        self.chatTextField.userInteractionEnabled = TRUE;
-         [self.chatTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:self.chat.count-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:NO];
-              });
-    }];
-
-}
+        [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
+        self.chatTextField.userInteractionEnabled = NO;
+        
+        
+        chatTableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+        
+        //Remove separator
+        self.chatTableView.separatorColor = [UIColor clearColor];
+        
+        self.chatTextField.enablesReturnKeyAutomatically = YES;
+        
+        UserData *userData = [UserData sharedManager];
+        
+        // Initialize array that will store chat messages.
+        self.chat = [[NSMutableArray alloc] init];
+        
+        // Initialize the root of our Firebase namespace.
+        self.firebase = [[Firebase alloc] initWithUrl:kFirechatNS];
+        
+        //Store name and photoURL in UserDefaults
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+        userData.userName = [defaults objectForKey:@"name"];
+        userData.userPhoto = [defaults objectForKey:@"photo"];
+        
+        self.name = userData.userName;
+        self.photoURL = userData.userPhoto;
+        
+        [self.firebase observeEventType:FEventTypeChildAdded withBlock:^(FDataSnapshot *snapshot) {
+            // Add the chat message to the array.
+            [self.chat addObject:snapshot.value];
+            // Reload the table view so the new message will show up.
+            [SVProgressHUD dismiss];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                [self.chatTableView reloadData];
+                
+                self.chatTextField.userInteractionEnabled = TRUE;
+                [self.chatTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:self.chat.count-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:NO];
+            });
+        }];
+    }
 }
 
 
@@ -261,7 +258,8 @@
 // text field upwards when the keyboard shows, and downwards when it hides.
 - (void)keyboardWillShow:(NSNotification*)notification
 {
-    
+    [SVProgressHUD dismiss];
+
     CGRect chatTextFieldFrame = CGRectMake(chatTextField.frame.origin.x,chatTextField.frame.origin.y-170,chatTextField.frame.size.width,chatTextField.frame.size.height);
     [UIView animateWithDuration:0.3 animations:^{ chatTextField.frame = chatTextFieldFrame;}];
     
